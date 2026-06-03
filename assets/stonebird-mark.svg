@@ -1,0 +1,13 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Stonebird Group mark</title>
+  <desc id="desc">A minimal line emblem of a bird standing on a faceted stone inside a circle.</desc>
+  <g stroke="#0A0A0B" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="128" cy="128" r="108"/>
+    <path d="M54 184L75 154L128 134L177 157L201 206"/>
+    <path d="M74 154L128 134L128 174"/>
+    <path d="M128 174L177 157"/>
+    <path d="M59 152L106 126L139 64C145 53 158 51 170 58L186 71L166 74L166 105C166 128 150 143 128 143C117 143 106 139 98 132"/>
+    <path d="M105 126L142 108"/>
+    <path d="M128 143V174"/>
+  </g>
+</svg>
