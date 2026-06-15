@@ -273,6 +273,8 @@ a { color: inherit; text-decoration: none; }
   background: var(--ink);
   color: var(--white);
   border-color: #2c2a26;
+  overflow: hidden;
+  position: relative;
 }
 .lab-card-top {
   display: flex;
@@ -293,6 +295,23 @@ a { color: inherit; text-decoration: none; }
 .lab-type { color: var(--soft); }
 .lab-card.featured .lab-status { color: rgba(255,255,255,.72); }
 .lab-card.featured .lab-type { color: rgba(255,255,255,.42); }
+.lab-card-body {
+  display: block;
+}
+.lab-copy {
+  min-width: 0;
+  max-width: 520px;
+}
+.lab-icon {
+  position: absolute;
+  right: clamp(28px, 4vw, 38px);
+  bottom: clamp(28px, 4vw, 38px);
+  width: clamp(96px, 13vw, 148px);
+  height: clamp(96px, 13vw, 148px);
+  border-radius: 26%;
+  object-fit: cover;
+  box-shadow: 0 26px 58px rgba(0,0,0,.34), 0 0 0 1px rgba(255,255,255,.1);
+}
 .lab-card h3 {
   margin: auto 0 0;
   font-size: clamp(34px, 5vw, 68px);
@@ -308,7 +327,10 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.48;
   letter-spacing: -.018em;
 }
-.lab-card.featured p { color: rgba(255,255,255,.68); }
+.lab-card.featured p {
+  max-width: 380px;
+  color: rgba(255,255,255,.68);
+}
 .lab-link {
   display: inline-flex;
   align-self: flex-start;
@@ -452,6 +474,11 @@ a { color: inherit; text-decoration: none; }
   .section-grid { grid-template-columns: 1fr; gap: 24px; }
   .architecture-grid { grid-template-columns: 1fr; }
   .unit-card { min-height: 260px; }
+  .lab-icon {
+    position: static;
+    display: block;
+    margin-bottom: 6px;
+  }
   .principles-list article { grid-template-columns: 1fr; gap: 12px; padding: 30px 0; }
   .principles-list p { grid-column: auto; }
   .interest-grid { grid-template-columns: 1fr; }
