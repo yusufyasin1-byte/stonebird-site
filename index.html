@@ -38,7 +38,9 @@
           "name": "Stonebird Labs"
         },
         "sameAs": [
-          "https://apps.apple.com/ae/app/gridlock-terminal/id6774062902"
+          "https://apps.apple.com/ae/app/gridlock-terminal/id6774062902",
+          "https://stonebirdgroup.com/labs/gridlock-terminal",
+          "https://stonebirdgroup.com/labs/spend-scout"
         ]
       },
       {
@@ -46,13 +48,34 @@
         "@id": "https://stonebirdgroup.com/#gridlock-terminal",
         "name": "Gridlock: Terminal",
         "applicationCategory": "GameApplication",
+        "applicationSubCategory": "Arcade",
         "operatingSystem": "iOS",
-        "url": "https://apps.apple.com/ae/app/gridlock-terminal/id6774062902",
+        "url": "https://stonebirdgroup.com/labs/gridlock-terminal",
         "downloadUrl": "https://apps.apple.com/ae/app/gridlock-terminal/id6774062902",
+        "image": "https://stonebirdgroup.com/assets/gridlock-terminal-icon.png",
+        "description": "Gridlock: Terminal is a fast-paced air traffic control arcade game for iOS. Draw flight paths, land aircraft, and keep the terminal alive. Features Daily Dispatch mode and Game Center achievements.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
         "publisher": {
           "@id": "https://stonebirdgroup.com/#organization"
-        },
-        "description": "Gridlock: Terminal is a premium mobile air-traffic routing game from Stonebird Labs."
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://stonebirdgroup.com/#spend-scout",
+        "name": "Spend Scout: Expense Tracker",
+        "applicationCategory": "FinanceApplication",
+        "applicationSubCategory": "Personal Finance",
+        "operatingSystem": "iOS",
+        "url": "https://stonebirdgroup.com/labs/spend-scout",
+        "image": "https://stonebirdgroup.com/assets/spend-scout-icon.png",
+        "description": "Spend Scout is a private expense tracker that forecasts where your monthly spending is heading. No bank linking, no accounts, no subscriptions. Coming soon to iOS.",
+        "publisher": {
+          "@id": "https://stonebirdgroup.com/#organization"
+        }
       }
     ]
   }
@@ -146,22 +169,33 @@
           <div class="lab-card-body">
             <div class="lab-copy">
               <h3>Gridlock: Terminal</h3>
-              <p>A premium mobile air-traffic routing game about timing, pressure, and clean command decisions.</p>
+              <p>A fast-paced air traffic control arcade game. Draw flight paths, land aircraft, and keep the terminal alive. One bad route can cause a crash.</p>
               <a class="lab-link" href="https://apps.apple.com/ae/app/gridlock-terminal/id6774062902" rel="noopener noreferrer" target="_blank" aria-label="Download Gridlock: Terminal on the App Store">
                 Download on the App Store
+              </a>
+              <a class="lab-link lab-link-secondary" href="/labs/gridlock-terminal" aria-label="Learn more about Gridlock: Terminal">
+                Learn more
               </a>
             </div>
             <img class="lab-icon" src="assets/gridlock-terminal-icon.png" alt="Gridlock: Terminal app icon" width="132" height="132" loading="lazy" />
           </div>
         </article>
-        <article class="lab-card" data-reveal>
+        <article class="lab-card lab-card-spendscout" data-reveal>
           <div class="lab-card-top">
             <span class="lab-status">Coming soon</span>
             <span class="lab-type">Finance</span>
           </div>
-          <h3>Spend Scout: Expense Tracker</h3>
-          <p>A private finance tracking app for keeping expenses clear, organized, and easy to review.</p>
-          <span class="lab-link muted" aria-label="Spend Scout App Store link coming soon">App Store link coming soon</span>
+          <div class="lab-card-body">
+            <div class="lab-copy">
+              <h3>Spend Scout</h3>
+              <p>Most expense trackers tell you what already happened. Spend Scout tells you where your month is heading — so you can adjust before you overspend.</p>
+              <span class="lab-link muted" aria-label="Spend Scout App Store link coming soon">App Store — Coming soon</span>
+              <a class="lab-link lab-link-secondary" href="/labs/spend-scout" aria-label="Learn more about Spend Scout">
+                Learn more
+              </a>
+            </div>
+            <img class="lab-icon lab-icon-spendscout" src="assets/spend-scout-icon.png" alt="Spend Scout app icon" width="132" height="132" loading="lazy" />
+          </div>
         </article>
       </div>
     </section>

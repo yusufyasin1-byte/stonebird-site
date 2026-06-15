@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spend Scout: Expense Tracker – Know Before You Overspend | Stonebird Labs</title>
+  <meta name="description" content="Spend Scout is a private expense tracker that tells you where your month is heading before it's over. No bank linking. No accounts. No subscriptions. Just fast, private spending forecasts. Coming soon to iOS." />
+  <meta name="keywords" content="Spend Scout, expense tracker, budget tracker, spending forecast, private expense tracker, iOS expense app, budget app, overspending alert, personal finance tracker, spend tracking, monthly budget" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="canonical" href="https://stonebirdgroup.com/labs/spend-scout" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Spend Scout: Expense Tracker – Know Before You Overspend" />
+  <meta property="og:description" content="Most expense trackers tell you what already happened. Spend Scout tells you where your month is heading. Private, fast, and built for clarity. Coming soon to iOS." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://stonebirdgroup.com/labs/spend-scout" />
+  <meta property="og:image" content="https://stonebirdgroup.com/assets/og-image.png" />
+  <meta property="og:site_name" content="Stonebird Labs" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Spend Scout: Expense Tracker – Know Before You Overspend" />
+  <meta name="twitter:description" content="Most expense trackers tell you what already happened. Spend Scout tells you where your month is heading. Private, fast, and built for clarity." />
+  <meta name="twitter:image" content="https://stonebirdgroup.com/assets/og-image.png" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/stonebird-app-icon-dark-512.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+
+  <link rel="stylesheet" href="../styles.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://stonebirdgroup.com/labs/spend-scout#app",
+        "name": "Spend Scout: Expense Tracker",
+        "applicationCategory": "FinanceApplication",
+        "applicationSubCategory": "Personal Finance",
+        "operatingSystem": "iOS",
+        "url": "https://stonebirdgroup.com/labs/spend-scout",
+        "image": "https://stonebirdgroup.com/assets/spend-scout-icon.png",
+        "description": "Spend Scout is a private expense tracker that forecasts where your monthly spending is heading. Log expenses, see your projected month-end, and adjust before you overspend. No bank linking, no accounts, no subscriptions.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://stonebirdgroup.com/#organization",
+          "name": "Stonebird Labs",
+          "url": "https://stonebirdgroup.com/"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Stonebird Group",
+            "item": "https://stonebirdgroup.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Labs",
+            "item": "https://stonebirdgroup.com/#labs"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Spend Scout: Expense Tracker"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Spend Scout?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spend Scout is a private expense tracker that tells you where your month is heading before it's over. As you log expenses, it forecasts your month-end spending so you can adjust before you overspend."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Spend Scout private?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Spend Scout has no bank linking, no account creation, and no subscriptions. Your spending data stays on your device."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the spending forecast work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spend Scout looks at how quickly you are spending compared to how much of the month has passed, then projects where you are likely to finish. For example, it might tell you that at your current pace you will finish AED 620 over budget."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Spend Scout support multiple currencies?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Spend Scout supports tracking expenses across multiple currencies, whether you spend with cash, cards, or a mix of both."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Spend Scout free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spend Scout is designed to be a simple, private tool with no subscriptions or hidden costs."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="lab-page lab-page--spendscout">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-reveal>
+    <a class="brand" href="/" aria-label="Stonebird Group home">
+      <img src="../assets/stonebird-mark-black-64.png" alt="" class="brand-mark" width="32" height="32" />
+      <span>Stonebird Group</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="/#about">About</a>
+      <a href="/#labs">Labs</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="ss-hero" aria-labelledby="ss-hero-title">
+      <div class="ss-hero-inner" data-reveal>
+        <nav class="ss-breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Stonebird</a>
+          <span aria-hidden="true">/</span>
+          <a href="/#labs">Labs</a>
+          <span aria-hidden="true">/</span>
+          <span>Spend Scout</span>
+        </nav>
+        <div class="ss-hero-content">
+          <img class="ss-hero-icon" src="../assets/spend-scout-icon.png" alt="Spend Scout app icon" width="88" height="88" />
+          <p class="ss-hero-badge">Stonebird Labs &bull; Coming soon</p>
+          <h1 id="ss-hero-title">Know before<br />you overspend.</h1>
+          <p class="ss-hero-description">Most expense trackers tell you what already happened. Spend Scout tells you where your month is heading — so you can adjust before it's too late.</p>
+          <div class="ss-hero-cta-row">
+            <span class="ss-coming-soon-pill">App Store — Coming soon</span>
+          </div>
+        </div>
+        <div class="ss-hero-visual" aria-hidden="true">
+          <div class="ss-phone-mock">
+            <div class="ss-phone-screen">
+              <div class="ss-phone-header">
+                <span class="ss-phone-title">Monthly Forecast</span>
+                <span class="ss-phone-date">June 15</span>
+              </div>
+              <div class="ss-phone-forecast">
+                <div class="ss-forecast-label">Projected month-end</div>
+                <div class="ss-forecast-value ss-forecast-value--over">AED 8,620</div>
+                <div class="ss-forecast-sub">AED 620 over budget</div>
+              </div>
+              <div class="ss-phone-chart">
+                <svg viewBox="0 0 300 120" class="ss-chart-svg">
+                  <line x1="0" y1="100" x2="300" y2="100" stroke="#e8e8e8" stroke-width="1"/>
+                  <line x1="150" y1="0" x2="150" y2="120" stroke="#e8e8e8" stroke-width="1" stroke-dasharray="4,4"/>
+                  <polyline points="0,95 30,90 60,82 90,70 120,58 150,45" fill="none" stroke="#5D58D6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <polyline points="150,45 180,35 210,25 240,18 270,10 300,5" fill="none" stroke="#5D58D6" stroke-width="2" stroke-dasharray="6,4" stroke-linecap="round" opacity="0.5"/>
+                  <line x1="0" y1="100" x2="300" y2="20" stroke="#e5e5e5" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>
+                  <circle cx="150" cy="45" r="5" fill="#5D58D6"/>
+                  <text x="150" y="115" text-anchor="middle" font-size="9" fill="#999">Today</text>
+                </svg>
+              </div>
+              <div class="ss-phone-status">
+                <div class="ss-status-item">
+                  <span class="ss-status-dot ss-status-dot--green"></span>
+                  <span>Housing</span>
+                  <span class="ss-status-val">On track</span>
+                </div>
+                <div class="ss-status-item">
+                  <span class="ss-status-dot ss-status-dot--red"></span>
+                  <span>Dining</span>
+                  <span class="ss-status-val">Above pace</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="ss-section ss-problem" aria-labelledby="ss-problem-title">
+      <div class="ss-section-inner" data-reveal>
+        <p class="ss-kicker">The problem</p>
+        <h2 id="ss-problem-title">Every day, people make spending decisions<br />without knowing where they stand.</h2>
+        <p class="ss-problem-text">"Can I afford this dinner?" "Should I buy this now or wait?" "Am I spending too much without realizing it?" Most people don't know the answer until the month is already over. By then, it's too late.</p>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="ss-section ss-how" aria-labelledby="ss-how-title">
+      <div class="ss-section-inner">
+        <p class="ss-kicker" data-reveal>How it works</p>
+        <h2 id="ss-how-title" data-reveal>One question. One clear answer.</h2>
+        <p class="ss-how-subtitle" data-reveal>Spend Scout looks at how quickly you're spending compared to how much of the month has passed. Then it gives you a simple forecast.</p>
+        <div class="ss-example-grid">
+          <article class="ss-example-card ss-example-card--warning" data-reveal>
+            <div class="ss-example-indicator"></div>
+            <p class="ss-example-label">At this speed, you'll finish</p>
+            <p class="ss-example-value">AED 620 over budget</p>
+            <p class="ss-example-hint">Time to slow down on discretionary spending.</p>
+          </article>
+          <article class="ss-example-card ss-example-card--good" data-reveal>
+            <div class="ss-example-indicator"></div>
+            <p class="ss-example-label">You're on track to finish with</p>
+            <p class="ss-example-value">AED 240 remaining</p>
+            <p class="ss-example-hint">You have room for that purchase this month.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="ss-section" aria-labelledby="ss-features-title">
+      <div class="ss-section-inner">
+        <p class="ss-kicker" data-reveal>Features</p>
+        <h2 id="ss-features-title" data-reveal>Built for clarity, not complexity.</h2>
+        <div class="ss-feature-grid">
+          <article class="ss-feature-card" data-reveal>
+            <div class="ss-feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5D58D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3>Spending forecast</h3>
+            <p>See where you'll end the month before you get there. A simple projection based on your actual spending pace, not guesswork.</p>
+          </article>
+          <article class="ss-feature-card" data-reveal>
+            <div class="ss-feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5D58D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3>Fully private</h3>
+            <p>No bank linking. No account creation. No cloud syncing. Your spending data stays on your device, period.</p>
+          </article>
+          <article class="ss-feature-card" data-reveal>
+            <div class="ss-feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5D58D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+            </div>
+            <h3>Fast logging</h3>
+            <p>Log an expense in seconds. Cash, card, or transfer — just tap, enter the amount, and move on with your day.</p>
+          </article>
+          <article class="ss-feature-card" data-reveal>
+            <div class="ss-feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5D58D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Multi-currency</h3>
+            <p>Track spending across currencies. Whether you spend in dirhams, dollars, or euros, Spend Scout keeps everything organized.</p>
+          </article>
+          <article class="ss-feature-card" data-reveal>
+            <div class="ss-feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5D58D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+            </div>
+            <h3>Category insights</h3>
+            <p>See which categories are above pace and which are on track. No endless charts — just the categories that matter, at a glance.</p>
+          </article>
+          <article class="ss-feature-card" data-reveal>
+            <div class="ss-feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5D58D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>No subscriptions</h3>
+            <p>No hidden fees, no premium tiers, no ads. Just a clean, focused tool that does one thing well.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- For who -->
+    <section class="ss-section ss-section--tinted" aria-labelledby="ss-who-title">
+      <div class="ss-section-inner" data-reveal>
+        <p class="ss-kicker">Who it's for</p>
+        <h2 id="ss-who-title">For people who want to make better<br />spending decisions.</h2>
+        <div class="ss-audience-grid">
+          <div class="ss-audience-card">
+            <h3>You budget, but still overspend</h3>
+            <p>You set a monthly budget but rarely check it until month-end. Spend Scout gives you a real-time signal of where you're heading.</p>
+          </div>
+          <div class="ss-audience-card">
+            <h3>You use cash and cards</h3>
+            <p>Bank-linked apps miss your cash spending. Spend Scout captures everything — cards, cash, transfers — in one place.</p>
+          </div>
+          <div class="ss-audience-card">
+            <h3>You want privacy</h3>
+            <p>No financial advice, no data sharing, no account creation. Just a fast, private tool that respects your information.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="ss-section" aria-labelledby="ss-faq-title">
+      <div class="ss-section-inner">
+        <p class="ss-kicker" data-reveal>FAQ</p>
+        <h2 id="ss-faq-title" data-reveal>Common questions.</h2>
+        <div class="ss-faq-list" data-reveal>
+          <details class="ss-faq-item">
+            <summary>What makes Spend Scout different?</summary>
+            <p>Most expense trackers are backward-looking — they show you what you already spent. Spend Scout is forward-looking. It tells you where your month is heading so you can change course before overspending happens.</p>
+          </details>
+          <details class="ss-faq-item">
+            <summary>How does the forecast work?</summary>
+            <p>Spend Scout calculates your daily spending pace against the number of days elapsed in the month, then projects your total spend by month-end. It updates every time you log an expense.</p>
+          </details>
+          <details class="ss-faq-item">
+            <summary>Is my data private?</summary>
+            <p>Completely. There is no bank linking, no account creation, and no cloud storage. Your spending data lives only on your device.</p>
+          </details>
+          <details class="ss-faq-item">
+            <summary>Does it work with multiple currencies?</summary>
+            <p>Yes. You can log expenses in different currencies and Spend Scout keeps them organized. Perfect for people who travel or spend across borders.</p>
+          </details>
+          <details class="ss-faq-item">
+            <summary>When will it be available?</summary>
+            <p>Spend Scout is coming soon to the App Store for iOS. Sign up to be notified when it launches.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="ss-section ss-cta" aria-labelledby="ss-cta-title">
+      <div class="ss-section-inner" data-reveal>
+        <h2 id="ss-cta-title">Stop guessing.<br />Start knowing.</h2>
+        <p class="ss-cta-sub">Spend Scout is coming soon to iOS.</p>
+        <span class="ss-coming-soon-pill ss-coming-soon-pill--lg">App Store — Coming soon</span>
+      </div>
+    </section>
+
+    <!-- Explore more -->
+    <section class="ss-section ss-explore" aria-labelledby="ss-explore-title">
+      <div class="ss-section-inner" data-reveal>
+        <p class="ss-kicker">More from Stonebird Labs</p>
+        <h2 id="ss-explore-title" class="ss-explore-heading">Explore our other products.</h2>
+        <a class="ss-explore-link" href="/labs/gridlock-terminal">
+          <span class="ss-explore-link-icon" aria-hidden="true">
+            <img src="../assets/gridlock-terminal-icon.png" alt="" width="40" height="40" />
+          </span>
+          <span>
+            <strong>Gridlock: Terminal</strong>
+            <span class="ss-explore-link-sub">Air traffic control arcade game. Free on the App Store.</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>&copy; <span id="year"></span> Stonebird Group</div>
+    <div><a href="/">stonebirdgroup.com</a></div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

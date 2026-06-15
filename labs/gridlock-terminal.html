@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gridlock: Terminal – Air Traffic Control Arcade Game | Stonebird Labs</title>
+  <meta name="description" content="Gridlock: Terminal is a fast-paced air traffic control arcade game for iOS. Draw flight paths, land aircraft, and keep the terminal alive. One bad route can cause a crash. Free on the App Store." />
+  <meta name="keywords" content="Gridlock Terminal, air traffic control game, arcade game iOS, flight path game, plane landing game, air traffic simulator, iOS arcade game, daily dispatch game, Game Center achievements" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <link rel="canonical" href="https://stonebirdgroup.com/labs/gridlock-terminal" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gridlock: Terminal – Air Traffic Control Arcade Game" />
+  <meta property="og:description" content="Draw flight paths, land aircraft, and keep the terminal alive. A fast-paced arcade game about timing, pressure, and split-second decisions. Free on the App Store." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://stonebirdgroup.com/labs/gridlock-terminal" />
+  <meta property="og:image" content="https://stonebirdgroup.com/assets/og-image.png" />
+  <meta property="og:site_name" content="Stonebird Labs" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gridlock: Terminal – Air Traffic Control Arcade Game" />
+  <meta name="twitter:description" content="Draw flight paths, land aircraft, and keep the terminal alive. A fast-paced iOS arcade game about timing, pressure, and split-second decisions." />
+  <meta name="twitter:image" content="https://stonebirdgroup.com/assets/og-image.png" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/stonebird-app-icon-dark-512.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+
+  <link rel="stylesheet" href="../styles.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://stonebirdgroup.com/labs/gridlock-terminal#app",
+        "name": "Gridlock: Terminal",
+        "applicationCategory": "GameApplication",
+        "applicationSubCategory": "Arcade",
+        "operatingSystem": "iOS",
+        "url": "https://stonebirdgroup.com/labs/gridlock-terminal",
+        "downloadUrl": "https://apps.apple.com/ae/app/gridlock-terminal/id6774062902",
+        "image": "https://stonebirdgroup.com/assets/gridlock-terminal-icon.png",
+        "description": "Gridlock: Terminal is a fast-paced air traffic control arcade game for iOS. Draw flight paths, land aircraft, and keep the terminal alive. One bad route can cause a crash. Features Daily Dispatch mode, Game Center achievements, and progressively chaotic skies.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://stonebirdgroup.com/#organization",
+          "name": "Stonebird Labs",
+          "url": "https://stonebirdgroup.com/"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Stonebird Group",
+            "item": "https://stonebirdgroup.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Labs",
+            "item": "https://stonebirdgroup.com/#labs"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Gridlock: Terminal"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Gridlock: Terminal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Gridlock: Terminal is a fast-paced air traffic control arcade game for iOS. Players draw flight paths to guide aircraft to their correct destinations while avoiding crashes, turbulence, and obstacles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Gridlock: Terminal free to play?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Gridlock: Terminal is free to download and play on the App Store. Sessions are designed for quick retries."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Daily Dispatch mode?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Daily Dispatch is a single daily challenge that gives you one attempt, one score, and one chance to climb the leaderboard before it resets the next day."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What devices support Gridlock: Terminal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Gridlock: Terminal is available on iOS devices including iPhone and iPad. Download it from the App Store."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="lab-page lab-page--gridlock">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header is-scrolled" data-reveal>
+    <a class="brand" href="/" aria-label="Stonebird Group home">
+      <img src="../assets/stonebird-mark-black-64.png" alt="" class="brand-mark" width="32" height="32" />
+      <span>Stonebird Group</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="/#about">About</a>
+      <a href="/#labs">Labs</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="gl-hero" aria-labelledby="gl-hero-title">
+      <div class="gl-hero-grid-bg"></div>
+      <div class="gl-hero-inner" data-reveal>
+        <nav class="gl-breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Stonebird</a>
+          <span aria-hidden="true">/</span>
+          <a href="/#labs">Labs</a>
+          <span aria-hidden="true">/</span>
+          <span>Gridlock: Terminal</span>
+        </nav>
+        <img class="gl-hero-icon" src="../assets/gridlock-terminal-icon.png" alt="Gridlock: Terminal app icon" width="120" height="120" />
+        <p class="gl-hero-badge">Live on the App Store</p>
+        <h1 id="gl-hero-title">Keep the terminal alive.</h1>
+        <p class="gl-hero-tagline">Draw flight paths. Land aircraft. Don't crash.</p>
+        <p class="gl-hero-description">A fast-paced air traffic control arcade game about timing, pressure, and split-second decisions. One bad route and it's over.</p>
+        <div class="gl-hero-cta-row">
+          <a class="gl-btn-primary" href="https://apps.apple.com/ae/app/gridlock-terminal/id6774062902" rel="noopener noreferrer" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5c0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.6 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+            Download Free
+          </a>
+          <span class="gl-hero-meta-sub">iOS &bull; Free to play &bull; Game Center</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- What is it -->
+    <section class="gl-section gl-intro" aria-labelledby="gl-intro-title">
+      <div class="gl-section-inner" data-reveal>
+        <p class="gl-kicker">The game</p>
+        <h2 id="gl-intro-title">Simple to learn. Difficult to master.</h2>
+        <p class="gl-intro-text">Gridlock: Terminal puts you in the control tower. Aircraft stream in from every direction, each heading for a specific helipad or runway. Your job is to draw their flight paths, guide them safely to the ground, and keep the skies from turning into chaos. The longer you survive, the more crowded the terminal becomes.</p>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="gl-section" aria-labelledby="gl-features-title">
+      <div class="gl-section-inner">
+        <p class="gl-kicker" data-reveal>Features</p>
+        <h2 id="gl-features-title" data-reveal>Everything you need in the tower.</h2>
+        <div class="gl-feature-grid">
+          <article class="gl-feature-card" data-reveal>
+            <div class="gl-feature-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+            </div>
+            <h3>Draw to route</h3>
+            <p>Use a single finger to draw flight paths. Guide helicopters, heavy planes, and jets to their matching landing zones with precision and speed.</p>
+          </article>
+          <article class="gl-feature-card" data-reveal>
+            <div class="gl-feature-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3>Daily Dispatch</h3>
+            <p>One attempt. One score. One chance to climb the leaderboard. A single daily challenge that resets every 24 hours — no second chances.</p>
+          </article>
+          <article class="gl-feature-card" data-reveal>
+            <div class="gl-feature-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Game Center</h3>
+            <p>Earn achievements, compete on global leaderboards, and see how your high score stacks up against players around the world.</p>
+          </article>
+          <article class="gl-feature-card" data-reveal>
+            <div class="gl-feature-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3>Progressive chaos</h3>
+            <p>Skies get busier with every landing. Turbulence, birds, and screen boundaries add pressure. How long can you keep the terminal alive?</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Play -->
+    <section class="gl-section" aria-labelledby="gl-howto-title">
+      <div class="gl-section-inner">
+        <p class="gl-kicker" data-reveal>How to play</p>
+        <h2 id="gl-howto-title" data-reveal>Three steps. Infinite skies.</h2>
+        <div class="gl-steps">
+          <div class="gl-step" data-reveal>
+            <span class="gl-step-num">01</span>
+            <h3>Tap an aircraft</h3>
+            <p>Select any incoming aircraft to begin routing it. Each vehicle type has a matching landing zone — helicopters need helipads, jets need runways.</p>
+          </div>
+          <div class="gl-step" data-reveal>
+            <span class="gl-step-num">02</span>
+            <h3>Draw its path</h3>
+            <p>Use your finger to draw a flight path from the aircraft to the correct destination. Avoid other aircraft, turbulence zones, and screen edges.</p>
+          </div>
+          <div class="gl-step" data-reveal>
+            <span class="gl-step-num">03</span>
+            <h3>Land and survive</h3>
+            <p>Guide the aircraft to a safe landing. Each successful landing earns points. Each crash brings you closer to game over. Keep the terminal alive.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Obstacles -->
+    <section class="gl-section gl-section--accent" aria-labelledby="gl-obstacles-title">
+      <div class="gl-section-inner" data-reveal>
+        <p class="gl-kicker">Watch out</p>
+        <h2 id="gl-obstacles-title">The skies fight back.</h2>
+        <div class="gl-obstacle-list">
+          <div class="gl-obstacle-item">
+            <span class="gl-obstacle-emoji" aria-hidden="true">&#x1F426;</span>
+            <div>
+              <h3>Birds</h3>
+              <p>Flocks cross your flight paths unpredictably, forcing quick reroutes.</p>
+            </div>
+          </div>
+          <div class="gl-obstacle-item">
+            <span class="gl-obstacle-emoji" aria-hidden="true">&#x1F32A;&#xFE0F;</span>
+            <div>
+              <h3>Turbulence</h3>
+              <p>Turbulent zones disrupt your drawn paths and push aircraft off course.</p>
+            </div>
+          </div>
+          <div class="gl-obstacle-item">
+            <span class="gl-obstacle-emoji" aria-hidden="true">&#x1F6E9;&#xFE0F;</span>
+            <div>
+              <h3>Screen boundaries</h3>
+              <p>Aircraft that fly off the edge are lost. Keep every route inside the terminal zone.</p>
+            </div>
+          </div>
+          <div class="gl-obstacle-item">
+            <span class="gl-obstacle-emoji" aria-hidden="true">&#x1F4A5;</span>
+            <div>
+              <h3>Mid-air collisions</h3>
+              <p>Crossed paths mean disaster. Time your routes to keep aircraft safely apart.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="gl-section" aria-labelledby="gl-faq-title">
+      <div class="gl-section-inner">
+        <p class="gl-kicker" data-reveal>FAQ</p>
+        <h2 id="gl-faq-title" data-reveal>Common questions.</h2>
+        <div class="gl-faq-list" data-reveal>
+          <details class="gl-faq-item">
+            <summary>What is Gridlock: Terminal?</summary>
+            <p>Gridlock: Terminal is a fast-paced air traffic control arcade game for iOS. You draw flight paths to guide helicopters, planes, and jets to their correct landing zones while avoiding crashes and obstacles.</p>
+          </details>
+          <details class="gl-faq-item">
+            <summary>Is it free to play?</summary>
+            <p>Yes. Gridlock: Terminal is free to download and play on the App Store. Sessions are designed for quick, addictive retries.</p>
+          </details>
+          <details class="gl-faq-item">
+            <summary>What is Daily Dispatch?</summary>
+            <p>Daily Dispatch is a single daily challenge. You get one attempt, one score, and one chance to climb the leaderboard. It resets every 24 hours.</p>
+          </details>
+          <details class="gl-faq-item">
+            <summary>What aircraft types are in the game?</summary>
+            <p>The game features helicopters, heavy planes, and jets. Each type must land at its matching zone — helicopters at helipads, jets at runways.</p>
+          </details>
+          <details class="gl-faq-item">
+            <summary>Does it support Game Center?</summary>
+            <p>Yes. Gridlock: Terminal supports Game Center achievements and global leaderboards so you can compete with players worldwide.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download CTA -->
+    <section class="gl-section gl-cta" aria-labelledby="gl-cta-title">
+      <div class="gl-section-inner" data-reveal>
+        <h2 id="gl-cta-title">How long can you keep<br />the terminal alive?</h2>
+        <a class="gl-btn-primary gl-btn-primary--lg" href="https://apps.apple.com/ae/app/gridlock-terminal/id6774062902" rel="noopener noreferrer" target="_blank">
+          <svg width="22" height="22" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5c0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.6 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+          Download on the App Store
+        </a>
+      </div>
+    </section>
+
+    <!-- Explore more -->
+    <section class="gl-section gl-explore" aria-labelledby="gl-explore-title">
+      <div class="gl-section-inner" data-reveal>
+        <p class="gl-kicker">More from Stonebird Labs</p>
+        <h2 id="gl-explore-title" class="gl-explore-heading">Explore our other products.</h2>
+        <a class="gl-explore-link" href="/labs/spend-scout">
+          <span class="gl-explore-link-icon" aria-hidden="true">
+            <img src="../assets/spend-scout-icon.png" alt="" width="40" height="40" />
+          </span>
+          <span>
+            <strong>Spend Scout: Expense Tracker</strong>
+            <span class="gl-explore-link-sub">Know before you overspend. Coming soon.</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>&copy; <span id="year"></span> Stonebird Group</div>
+    <div><a href="/">stonebirdgroup.com</a></div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
