@@ -90,165 +90,212 @@
       <img src="assets/stonebird-mark-black-64.png" alt="" class="brand-mark brand-mark-light" width="32" height="32" />
       <span>Stonebird Group</span>
     </a>
-    <nav class="site-nav" aria-label="Primary navigation">
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
       <a href="#about">About</a>
-      <a href="#architecture">Structure</a>
+      <a href="#structure">Structure</a>
       <a href="#labs">Labs</a>
       <a href="#principles">Principles</a>
       <a href="#contact">Contact</a>
     </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
   </header>
 
+  <div class="menu-overlay" id="menu-overlay"></div>
+
   <main id="main">
+
+    <!-- Hero -->
     <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="hero-mark-wrap" data-reveal>
           <img class="hero-mark" src="assets/stonebird-mark-white-1024.png" alt="Stonebird Group logo mark" />
         </div>
-        <p class="eyebrow" data-reveal>Private venture group</p>
-        <h1 id="hero-title" data-reveal>Built to hold.<br />Designed to build.</h1>
-        <p class="hero-copy" data-reveal>A private holding company building and backing long-term assets.</p>
+        <p class="eyebrow" data-reveal>Private Holding Company</p>
+        <h1 id="hero-title" data-reveal>Built to hold.<br/>Designed to build.</h1>
+        <p class="hero-copy" data-reveal>A private venture group building and backing durable businesses, digital products, and long-term assets.</p>
         <div class="hero-meta" aria-label="Stonebird Group focus areas" data-reveal>
           <span>Ventures</span>
-          <span>Operating capability</span>
-          <span>Strategic assets</span>
+          <span>Operating Capability</span>
+          <span>Strategic Assets</span>
         </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true" data-reveal>
+        <div class="hero-scroll-line"></div>
       </div>
     </section>
 
+    <!-- About -->
     <section class="section section-intro" id="about">
       <div class="section-grid">
         <div class="section-kicker" data-reveal>About</div>
         <div class="section-content" data-reveal>
-          <h2>Stonebird Group is a private holding company focused on durable businesses, digital products, real assets, and long-term ownership.</h2>
+          <h2>A private holding company focused on durable businesses, digital products, real assets, and long-term ownership.</h2>
           <p>We build selectively, back patiently, and hold with discipline. The group is designed as a quiet parent platform for company creation, operating capability, strategic ownership, and assets intended to compound over time.</p>
         </div>
       </div>
     </section>
 
-    <section class="section architecture" id="architecture" aria-labelledby="architecture-title">
+    <!-- Architecture -->
+    <section class="section architecture" id="structure" aria-labelledby="architecture-title">
       <div class="section-heading" data-reveal>
-        <p class="section-kicker">Group architecture</p>
+        <p class="section-kicker">Group Structure</p>
         <h2 id="architecture-title">A simple parent structure for ventures, operations, and long-term assets.</h2>
       </div>
-      <div class="architecture-grid">
-        <article class="unit-card parent" data-reveal>
-          <div class="unit-label">Parent</div>
-          <h3>Stonebird Group</h3>
-          <p>Group identity, governance, ownership, and long-term direction.</p>
-        </article>
-        <article class="unit-card" data-reveal>
-          <div class="unit-label">Venture</div>
-          <h3>Stonebird Labs</h3>
-          <p>Digital products and focused experiments built under the Stonebird operating umbrella.</p>
-        </article>
-        <article class="unit-card" data-reveal>
-          <div class="unit-label">Studio</div>
-          <h3>Stonebird Works</h3>
-          <p>Internal operating capability for product, automation, technical buildout, and company formation.</p>
-        </article>
-        <article class="unit-card" data-reveal>
-          <div class="unit-label">Holdings</div>
-          <h3>Strategic Assets</h3>
-          <p>Long-term ownership across ventures, intellectual property, property, public markets, and other durable opportunities.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section labs" id="labs" aria-labelledby="labs-title">
-      <div class="section-heading" data-reveal>
-        <p class="section-kicker">Stonebird Labs</p>
-        <h2 id="labs-title">Focused digital products built with long-term ownership in mind.</h2>
-      </div>
-      <div class="labs-grid" aria-label="Stonebird Labs products">
-        <article class="lab-card featured" data-reveal>
-          <div class="lab-card-top">
-            <span class="lab-status">Live on the App Store</span>
-            <span class="lab-type">Game</span>
+      <div class="architecture-grid" data-reveal>
+        <div class="arch-item arch-item--parent">
+          <div class="arch-label-row">
+            <span class="unit-label">Parent</span>
           </div>
-          <div class="lab-card-body">
-            <div class="lab-copy">
-              <h3>Gridlock: Terminal</h3>
-              <p>A fast-paced air traffic control arcade game. Draw flight paths, land aircraft, and keep the terminal alive. One bad route can cause a crash.</p>
-              <a class="lab-link" href="https://apps.apple.com/ae/app/gridlock-terminal/id6774062902" rel="noopener noreferrer" target="_blank" aria-label="Download Gridlock: Terminal on the App Store">
-                Download on the App Store
-              </a>
-              <a class="lab-link lab-link-secondary" href="/labs/gridlock-terminal" aria-label="Learn more about Gridlock: Terminal">
-                Learn more
-              </a>
-            </div>
-            <img class="lab-icon" src="assets/gridlock-terminal-icon.png" alt="Gridlock: Terminal app icon" width="132" height="132" loading="lazy" />
+          <div class="arch-body">
+            <h3>Stonebird Group</h3>
+            <p>Group identity, governance, ownership, and long-term direction.</p>
           </div>
-        </article>
-        <article class="lab-card lab-card-spendscout" data-reveal>
-          <div class="lab-card-top">
-            <span class="lab-status">Coming soon</span>
-            <span class="lab-type">Finance</span>
+        </div>
+        <div class="arch-item">
+          <div class="arch-label-row">
+            <span class="unit-label">Venture</span>
           </div>
-          <div class="lab-card-body">
-            <div class="lab-copy">
-              <h3>Spend Scout</h3>
-              <p>Most expense trackers tell you what already happened. Spend Scout tells you where your month is heading — so you can adjust before you overspend.</p>
-              <span class="lab-link muted" aria-label="Spend Scout App Store link coming soon">App Store — Coming soon</span>
-              <a class="lab-link lab-link-secondary" href="/labs/spend-scout" aria-label="Learn more about Spend Scout">
-                Learn more
-              </a>
-            </div>
-            <img class="lab-icon lab-icon-spendscout" src="assets/spend-scout-icon.png" alt="Spend Scout app icon" width="132" height="132" loading="lazy" />
+          <div class="arch-body">
+            <h3>Stonebird Labs</h3>
+            <p>Digital products and focused experiments built under the Stonebird operating umbrella.</p>
           </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section principles" id="principles" aria-labelledby="principles-title">
-      <div class="section-heading compact" data-reveal>
-        <p class="section-kicker">Operating principles</p>
-        <h2 id="principles-title">Patient ownership. Clear execution. No unnecessary noise.</h2>
-      </div>
-      <div class="principles-list">
-        <article data-reveal>
-          <span>01</span>
-          <h3>Long-term ownership</h3>
-          <p>We prefer patient control over short-term exits and build for assets that can endure.</p>
-        </article>
-        <article data-reveal>
-          <span>02</span>
-          <h3>Disciplined capital allocation</h3>
-          <p>Capital is allocated only where the downside is understood and the path to durable value is credible.</p>
-        </article>
-        <article data-reveal>
-          <span>03</span>
-          <h3>Simple, durable businesses</h3>
-          <p>We favor products, services, and assets that remain useful across cycles.</p>
-        </article>
-        <article data-reveal>
-          <span>04</span>
-          <h3>Design-led execution</h3>
-          <p>Product, brand, and operating detail are treated as strategic leverage, not decoration.</p>
-        </article>
-        <article data-reveal>
-          <span>05</span>
-          <h3>Compounding over speculation</h3>
-          <p>We avoid fashionable noise and focus on decisions that improve with time.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section interests" id="interests" aria-labelledby="interests-title">
-      <div class="section-grid">
-        <div class="section-kicker" data-reveal>Portfolio interests</div>
-        <div class="section-content" data-reveal>
-          <h2 id="interests-title">Areas where Stonebird can build, own, or back with long-term intent.</h2>
-          <div class="interest-grid" aria-label="Stonebird Group portfolio interests">
-            <div><span>Digital products</span></div>
-            <div><span>Real estate</span></div>
-            <div><span>Public markets</span></div>
-            <div><span>Strategic ventures</span></div>
+        </div>
+        <div class="arch-item">
+          <div class="arch-label-row">
+            <span class="unit-label">Studio</span>
+          </div>
+          <div class="arch-body">
+            <h3>Stonebird Works</h3>
+            <p>Internal operating capability for product, automation, technical buildout, and company formation.</p>
+          </div>
+        </div>
+        <div class="arch-item">
+          <div class="arch-label-row">
+            <span class="unit-label">Holdings</span>
+          </div>
+          <div class="arch-body">
+            <h3>Strategic Assets</h3>
+            <p>Long-term ownership across ventures, intellectual property, property, public markets, and other durable opportunities.</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Labs -->
+    <section class="section labs" id="labs" aria-labelledby="labs-title">
+      <div class="section-heading" data-reveal>
+        <p class="section-kicker">Stonebird Labs</p>
+        <h2 id="labs-title">Focused digital products built with long-term ownership in mind.</h2>
+      </div>
+      <div class="labs-stack" aria-label="Stonebird Labs products">
+
+        <article class="product-card product-card--dark" data-reveal>
+          <div class="product-card-header">
+            <img class="product-card-icon" src="assets/gridlock-terminal-icon.png" alt="Gridlock: Terminal app icon" width="80" height="80" loading="lazy" />
+            <div class="product-card-badges">
+              <span class="badge badge--live">Live</span>
+              <span class="badge badge--type">Game</span>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <h3>Gridlock: Terminal</h3>
+            <p>A fast-paced air traffic control arcade game. Draw flight paths, land aircraft, and keep the terminal alive. One bad route can cause a crash.</p>
+          </div>
+          <div class="product-card-actions">
+            <a class="product-btn product-btn--primary" href="https://apps.apple.com/ae/app/gridlock-terminal/id6774062902" rel="noopener noreferrer" target="_blank" aria-label="Download Gridlock: Terminal on the App Store">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+              App Store
+            </a>
+            <a class="product-btn product-btn--ghost" href="/labs/gridlock-terminal" aria-label="Learn more about Gridlock: Terminal">Learn more</a>
+          </div>
+        </article>
+
+        <article class="product-card product-card--light" data-reveal>
+          <div class="product-card-header">
+            <img class="product-card-icon" src="assets/spend-scout-icon.png" alt="Spend Scout app icon" width="80" height="80" loading="lazy" />
+            <div class="product-card-badges">
+              <span class="badge badge--soon">Coming soon</span>
+              <span class="badge badge--type">Finance</span>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <h3>Spend Scout</h3>
+            <p>Most expense trackers tell you what already happened. Spend Scout tells you where your month is heading — so you can adjust before you overspend.</p>
+          </div>
+          <div class="product-card-actions">
+            <span class="product-btn product-btn--disabled" aria-label="Spend Scout App Store link coming soon">App Store — Soon</span>
+            <a class="product-btn product-btn--ghost" href="/labs/spend-scout" aria-label="Learn more about Spend Scout">Learn more</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Principles -->
+    <section class="section principles" id="principles" aria-labelledby="principles-title">
+      <div class="section-heading compact" data-reveal>
+        <p class="section-kicker">Operating Principles</p>
+        <h2 id="principles-title">Patient ownership. Clear execution. No unnecessary noise.</h2>
+      </div>
+      <div class="principles-list">
+        <article data-reveal>
+          <span class="principle-num">01</span>
+          <div class="principle-content">
+            <h3>Long-term ownership</h3>
+            <p>We prefer patient control over short-term exits and build for assets that can endure.</p>
+          </div>
+        </article>
+        <article data-reveal>
+          <span class="principle-num">02</span>
+          <div class="principle-content">
+            <h3>Disciplined capital allocation</h3>
+            <p>Capital is allocated only where the downside is understood and the path to durable value is credible.</p>
+          </div>
+        </article>
+        <article data-reveal>
+          <span class="principle-num">03</span>
+          <div class="principle-content">
+            <h3>Simple, durable businesses</h3>
+            <p>We favor products, services, and assets that remain useful across cycles.</p>
+          </div>
+        </article>
+        <article data-reveal>
+          <span class="principle-num">04</span>
+          <div class="principle-content">
+            <h3>Design-led execution</h3>
+            <p>Product, brand, and operating detail are treated as strategic leverage, not decoration.</p>
+          </div>
+        </article>
+        <article data-reveal>
+          <span class="principle-num">05</span>
+          <div class="principle-content">
+            <h3>Compounding over speculation</h3>
+            <p>We avoid fashionable noise and focus on decisions that improve with time.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Interests -->
+    <section class="section interests" id="interests" aria-labelledby="interests-title">
+      <div class="section-grid">
+        <div class="section-kicker" data-reveal>Portfolio Interests</div>
+        <div class="section-content" data-reveal>
+          <h2 id="interests-title">Areas where Stonebird can build, own, or back with long-term intent.</h2>
+          <div class="interest-grid" aria-label="Stonebird Group portfolio interests">
+            <div><span>Digital Products</span></div>
+            <div><span>Real Estate</span></div>
+            <div><span>Public Markets</span></div>
+            <div><span>Strategic Ventures</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
     <section class="section contact" id="contact" aria-labelledby="contact-title">
       <div class="contact-card" data-reveal>
         <img src="assets/stonebird-mark-white-192.png" alt="" />
@@ -260,8 +307,8 @@
   </main>
 
   <footer class="site-footer">
-    <div>© <span id="year"></span> Stonebird Group</div>
-    <div>Private holding company</div>
+    <div>&copy; <span id="year"></span> Stonebird Group</div>
+    <div>Private Holding Company</div>
   </footer>
 
   <script src="script.js"></script>
