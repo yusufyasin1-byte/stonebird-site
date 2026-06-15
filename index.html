@@ -3,17 +3,60 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Stonebird Group</title>
-  <meta name="description" content="Stonebird Group is a private holding company building and backing long-term assets across durable businesses, digital products, real assets, and strategic ventures." />
+  <title>Stonebird Group | Private Holding Company & Stonebird Labs</title>
+  <meta name="description" content="Stonebird Group is a private holding company building long-term assets, digital products, and Stonebird Labs ventures including Gridlock: Terminal and Pace." />
   <meta name="theme-color" content="#050505" />
+  <link rel="canonical" href="https://stonebirdgroup.com/" />
   <meta property="og:title" content="Stonebird Group" />
-  <meta property="og:description" content="A private holding company building and backing long-term assets." />
+  <meta property="og:description" content="A private holding company building long-term assets and digital products through Stonebird Labs." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://stonebirdgroup.com/" />
   <meta property="og:image" content="https://stonebirdgroup.com/assets/og-image.png" />
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Stonebird Group" />
+  <meta name="twitter:description" content="Private holding company and home of Stonebird Labs digital products." />
+  <meta name="twitter:image" content="https://stonebirdgroup.com/assets/og-image.png" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/stonebird-app-icon-dark-512.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://stonebirdgroup.com/#organization",
+        "name": "Stonebird Group",
+        "url": "https://stonebirdgroup.com/",
+        "logo": "https://stonebirdgroup.com/assets/stonebird-app-icon-dark-512.png",
+        "description": "Stonebird Group is a private holding company building long-term assets, digital products, and Stonebird Labs ventures.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Stonebird Labs"
+        },
+        "sameAs": [
+          "https://apps.apple.com/ae/app/gridlock-terminal/id6774062902"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://stonebirdgroup.com/#gridlock-terminal",
+        "name": "Gridlock: Terminal",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "iOS",
+        "url": "https://apps.apple.com/ae/app/gridlock-terminal/id6774062902",
+        "downloadUrl": "https://apps.apple.com/ae/app/gridlock-terminal/id6774062902",
+        "publisher": {
+          "@id": "https://stonebirdgroup.com/#organization"
+        },
+        "description": "Gridlock: Terminal is a premium mobile air-traffic routing game from Stonebird Labs."
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -27,6 +70,7 @@
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="#about">About</a>
       <a href="#architecture">Structure</a>
+      <a href="#labs">Labs</a>
       <a href="#principles">Principles</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -72,8 +116,8 @@
         </article>
         <article class="unit-card" data-reveal>
           <div class="unit-label">Venture</div>
-          <h3>Gridlock Labs</h3>
-          <p>AI-native products and experiments that need their own sharper operating brand.</p>
+          <h3>Stonebird Labs</h3>
+          <p>Digital products and focused experiments built under the Stonebird operating umbrella.</p>
         </article>
         <article class="unit-card" data-reveal>
           <div class="unit-label">Studio</div>
@@ -84,6 +128,35 @@
           <div class="unit-label">Holdings</div>
           <h3>Strategic Assets</h3>
           <p>Long-term ownership across ventures, intellectual property, property, public markets, and other durable opportunities.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section labs" id="labs" aria-labelledby="labs-title">
+      <div class="section-heading" data-reveal>
+        <p class="section-kicker">Stonebird Labs</p>
+        <h2 id="labs-title">Focused digital products built with long-term ownership in mind.</h2>
+      </div>
+      <div class="labs-grid" aria-label="Stonebird Labs products">
+        <article class="lab-card featured" data-reveal>
+          <div class="lab-card-top">
+            <span class="lab-status">Live on the App Store</span>
+            <span class="lab-type">Game</span>
+          </div>
+          <h3>Gridlock: Terminal</h3>
+          <p>A premium mobile air-traffic routing game about timing, pressure, and clean command decisions.</p>
+          <a class="lab-link" href="https://apps.apple.com/ae/app/gridlock-terminal/id6774062902" rel="noopener noreferrer" target="_blank" aria-label="Download Gridlock: Terminal on the App Store">
+            Download on the App Store
+          </a>
+        </article>
+        <article class="lab-card" data-reveal>
+          <div class="lab-card-top">
+            <span class="lab-status">Coming soon</span>
+            <span class="lab-type">Finance</span>
+          </div>
+          <h3>Pace</h3>
+          <p>A private finance tracking app for seeing whether spending is on pace for the month.</p>
+          <span class="lab-link muted" aria-label="Pace App Store link coming soon">App Store link coming soon</span>
         </article>
       </div>
     </section>
