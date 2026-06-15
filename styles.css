@@ -1279,12 +1279,153 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ================================================================
+   GRIDLOCK — VIDEO HERO, PHONE CAROUSEL, GALLERY
+   ================================================================ */
+
+/* Video background */
+.gl-hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .15;
+  pointer-events: none;
+  z-index: 0;
+}
+.gl-hero-grid-bg { z-index: 1; }
+
+/* Split hero layout */
+.gl-hero-inner--split {
+  display: grid;
+  grid-template-columns: 1fr minmax(240px, 340px);
+  gap: clamp(32px, 5vw, 72px);
+  align-items: center;
+  text-align: left;
+}
+.gl-hero-text { max-width: 580px; }
+.gl-hero-cta-row--left { justify-content: flex-start; }
+
+/* Phone mockup */
+.gl-hero-phone-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.gl-phone-mock {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 9 / 19.5;
+  background: #111;
+  border-radius: 38px;
+  border: 2px solid rgba(200,255,0,.18);
+  box-shadow:
+    0 0 0 1px rgba(200,255,0,.06),
+    0 40px 80px rgba(0,0,0,.5),
+    0 12px 32px rgba(200,255,0,.08);
+  overflow: hidden;
+  position: relative;
+}
+.gl-phone-notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 24px;
+  background: #111;
+  border-radius: 0 0 16px 16px;
+  z-index: 5;
+}
+.gl-phone-carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.gl-phone-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .6s var(--ease);
+  z-index: 1;
+}
+.gl-phone-slide--active {
+  opacity: 1;
+  z-index: 2;
+}
+
+/* Carousel dots */
+.gl-phone-dots {
+  display: flex;
+  gap: 8px;
+}
+.gl-phone-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,.25);
+  cursor: pointer;
+  padding: 0;
+  transition: background .3s var(--ease), transform .3s var(--ease);
+}
+.gl-phone-dot:hover { background: rgba(255,255,255,.5); }
+.gl-phone-dot--active {
+  background: #c8ff00;
+  transform: scale(1.3);
+}
+
+/* Gameplay gallery */
+.gl-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.gl-gallery-item {
+  margin: 0;
+}
+.gl-gallery-frame {
+  aspect-ratio: 9 / 19.5;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.08);
+  background: #0e0e0d;
+  box-shadow: 0 20px 50px rgba(0,0,0,.4);
+  transition: transform .4s var(--ease), box-shadow .4s var(--ease);
+}
+.gl-gallery-frame:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(200,255,0,.08), 0 20px 50px rgba(0,0,0,.5);
+}
+.gl-gallery-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.gl-gallery-item figcaption {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(240,239,232,.45);
+  text-align: center;
+}
+
+/* ================================================================
    LAB PAGE RESPONSIVE
    ================================================================ */
 @media (max-width: 980px) {
   .gl-feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .gl-steps { grid-template-columns: 1fr; }
   .gl-obstacle-list { grid-template-columns: 1fr; }
+  .gl-hero-inner--split { grid-template-columns: 1fr; text-align: center; }
+  .gl-hero-cta-row--left { justify-content: center; }
+  .gl-hero-text { max-width: 100%; margin: 0 auto; }
+  .gl-gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .ss-hero-inner { grid-template-columns: 1fr; text-align: center; }
   .ss-hero-icon { margin-left: auto; margin-right: auto; }
   .ss-hero-description { margin-left: auto; margin-right: auto; }
@@ -1295,10 +1436,13 @@ a { color: inherit; text-decoration: none; }
 
 @media (max-width: 720px) {
   .gl-hero { padding-top: 100px; }
-  .gl-hero-icon { width: 88px; height: 88px; }
+  .gl-hero-video { display: none; }
+  .gl-hero-icon { width: 64px; height: 64px; }
   .gl-feature-grid { grid-template-columns: 1fr; }
   .gl-steps { grid-template-columns: 1fr; }
   .gl-obstacle-list { grid-template-columns: 1fr; }
+  .gl-gallery-grid { grid-template-columns: 1fr; max-width: 320px; margin: 0 auto; }
+  .gl-phone-mock { max-width: 220px; }
   .ss-hero { padding-top: 100px; min-height: auto; }
   .ss-phone-mock { width: 260px; }
   .ss-feature-grid { grid-template-columns: 1fr; }
