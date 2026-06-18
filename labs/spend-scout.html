@@ -4,14 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Spend Scout: Expense Tracker – Know Before You Overspend | Stonebird Labs</title>
-  <meta name="description" content="Spend Scout is a private expense tracker that forecasts your monthly spending. No bank linking, no subscriptions. Know before you overspend. Coming soon to iOS." />
-  <meta name="keywords" content="Spend Scout, expense tracker, budget tracker, spending forecast, private expense tracker, iOS expense app, budget app, overspending alert, personal finance tracker, spend tracking, monthly budget" />
+  <meta name="description" content="Spend Scout is a private iPhone expense tracker that forecasts your monthly spending. Log cash, cards, Apple Pay with Shortcuts, receipts, and currencies. No bank login. No subscription." />
+  <meta name="keywords" content="Spend Scout, expense tracker, budget tracker, spending forecast, private expense tracker, Apple Pay expense tracker, no bank login expense tracker, manual expense tracker iPhone, cash spending budget app, multi currency expense tracker" />
   <meta name="theme-color" content="#ffffff" />
   <link rel="canonical" href="https://stonebirdgroup.com/labs/spend-scout" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Spend Scout: Expense Tracker – Know Before You Overspend" />
-  <meta property="og:description" content="Most expense trackers tell you what already happened. Spend Scout tells you where your month is heading. Private, fast, and built for clarity. Coming soon to iOS." />
+  <meta property="og:description" content="Most expense trackers tell you what already happened. Spend Scout tells you where your month is heading. Private, fast, Apple Pay Shortcuts-friendly, and built for clarity." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://stonebirdgroup.com/labs/spend-scout" />
   <meta property="og:image" content="https://stonebirdgroup.com/assets/og-spend-scout.png" />
@@ -48,7 +48,7 @@
         "operatingSystem": "iOS",
         "url": "https://stonebirdgroup.com/labs/spend-scout",
         "image": "https://stonebirdgroup.com/assets/spend-scout-icon.png",
-        "description": "Spend Scout is a private expense tracker that forecasts where your monthly spending is heading. Log expenses, see your projected month-end, and adjust before you overspend. No bank linking, no accounts, no subscriptions.",
+        "description": "Spend Scout is a private iPhone expense tracker that forecasts where your monthly spending is heading. Log cash, cards, Apple Pay through a prebuilt Shortcuts automation, receipts, and currencies. No bank login, no account creation, optional one-time unlock, no subscription.",
         "offers": {
           "@type": "Offer",
           "price": "0",
@@ -120,6 +120,14 @@
           },
           {
             "@type": "Question",
+            "name": "Can Spend Scout track Apple Pay transactions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, through a prebuilt Shortcuts automation that runs on your device. Spend Scout does not directly read Wallet history or connect to your bank."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "Does it work with multiple currencies?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -131,7 +139,7 @@
             "name": "When will Spend Scout be available?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Spend Scout is coming soon to the App Store for iOS. It will be free to download with no subscriptions or in-app purchases."
+              "text": "Spend Scout's App Store launch is in progress for iPhone. It will be free to download with an optional one-time unlock and no subscription."
             }
           }
         ]
@@ -169,11 +177,11 @@
         </nav>
         <div class="ss-hero-content">
           <img class="ss-hero-icon" src="../assets/spend-scout-icon.png" alt="Spend Scout app icon" width="88" height="88" />
-          <p class="ss-hero-badge">Stonebird Labs &bull; Coming soon</p>
+          <p class="ss-hero-badge">Stonebird Labs &bull; iPhone launch in progress</p>
           <h1 id="ss-hero-title">Know before<br />you overspend.</h1>
-          <p class="ss-hero-description">Most expense trackers tell you what already happened. Spend Scout is a private spending tracker that forecasts where your month is heading — so you can adjust before it's too late.</p>
+          <p class="ss-hero-description">Most expense trackers tell you what already happened. Spend Scout is a private spending tracker that forecasts where your month is heading. Log cash, cards, Apple Pay with Shortcuts, receipts, and currencies without linking your bank.</p>
           <div class="ss-hero-cta-row">
-            <span class="ss-coming-soon-pill">App Store — Coming soon</span>
+            <span class="ss-coming-soon-pill">App Store launch in progress</span>
           </div>
         </div>
         <div class="ss-hero-visual" aria-hidden="true">
@@ -249,6 +257,32 @@
       </div>
     </section>
 
+    <!-- Apple Pay Capture -->
+    <section class="ss-section ss-automation" aria-labelledby="ss-automation-title">
+      <div class="ss-section-inner">
+        <p class="ss-kicker" data-reveal>Apple Pay Capture</p>
+        <h2 id="ss-automation-title" data-reveal>Capture Apple Pay spending with a prebuilt Shortcuts automation.</h2>
+        <p class="ss-automation-lede" data-reveal>Spend Scout helps you log Wallet transactions through an on-device Shortcuts automation. It passes only the transaction details you choose, such as amount, merchant, currency, and date.</p>
+        <div class="ss-automation-grid">
+          <article class="ss-automation-card" data-reveal>
+            <span class="ss-automation-num">01</span>
+            <h3>Runs on your iPhone</h3>
+            <p>The automation is configured in Apple Shortcuts and runs on your device after eligible Wallet transaction events.</p>
+          </article>
+          <article class="ss-automation-card" data-reveal>
+            <span class="ss-automation-num">02</span>
+            <h3>You stay in control</h3>
+            <p>Spend Scout receives only the fields you choose to pass into the app. You can review entries before saving.</p>
+          </article>
+          <article class="ss-automation-card" data-reveal>
+            <span class="ss-automation-num">03</span>
+            <h3>No direct Wallet read</h3>
+            <p>Spend Scout does not scrape Wallet, connect to your bank, or use a third-party transaction aggregator.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- Features -->
     <section class="ss-section" aria-labelledby="ss-features-title">
       <div class="ss-section-inner">
@@ -294,8 +328,8 @@
             <div class="ss-feature-icon" aria-hidden="true">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5D58D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
-            <h3>No subscriptions</h3>
-            <p>No hidden fees, no premium tiers, no ads. Just a clean, focused tool that does one thing well.</p>
+            <h3>Unlock once</h3>
+            <p>Start free, then use an optional one-time unlock when you need more. No subscription, no ads, and export stays available.</p>
           </article>
         </div>
       </div>
@@ -312,13 +346,29 @@
             <p>You set a monthly budget but rarely check it until month-end. Spend Scout is the expense tracker that gives you a real-time signal of where you're heading — not just a backward-looking report.</p>
           </div>
           <div class="ss-audience-card">
-            <h3>You use cash and cards</h3>
-            <p>Bank-linked budget apps miss your cash spending. Spend Scout captures everything — cards, cash, transfers — in one private spending tracker.</p>
+            <h3>You use cash, cards, and Apple Pay</h3>
+            <p>Bank-linked budget apps miss your cash spending. Spend Scout captures cash, cards, transfers, and Apple Pay entries through Shortcuts in one private spending tracker.</p>
           </div>
           <div class="ss-audience-card">
             <h3>You want a private finance app</h3>
             <p>No financial advice, no data sharing, no account creation. Spend Scout is a private expense tracker that respects your information while helping you stay on budget.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEO links -->
+    <section class="ss-section ss-seo-links" aria-labelledby="ss-seo-title">
+      <div class="ss-section-inner">
+        <p class="ss-kicker" data-reveal>Spend Scout Guides</p>
+        <h2 id="ss-seo-title" data-reveal>Built around the way people actually search for expense apps.</h2>
+        <div class="ss-seo-link-grid" data-reveal>
+          <a href="/labs/spend-scout/private-expense-tracker">Private expense tracker</a>
+          <a href="/labs/spend-scout/no-bank-login-expense-tracker">No bank login expense tracker</a>
+          <a href="/labs/spend-scout/manual-expense-tracker-iphone">Manual expense tracker for iPhone</a>
+          <a href="/labs/spend-scout/cash-spending-budget-app">Cash spending budget app</a>
+          <a href="/labs/spend-scout/multi-currency-expense-tracker">Multi-currency expense tracker</a>
+          <a href="/labs/spend-scout/apple-pay-expense-tracking-shortcuts">Apple Pay expense tracking with Shortcuts</a>
         </div>
       </div>
     </section>
@@ -346,12 +396,16 @@
             <p>No. Spend Scout is a fully private expense tracker with no bank linking, no account creation, and no cloud storage. Your spending data lives only on your device. This makes it ideal for people who want to track spending without sharing financial data.</p>
           </details>
           <details class="ss-faq-item">
+            <summary>Can Spend Scout track Apple Pay transactions?</summary>
+            <p>Yes, through a prebuilt Shortcuts automation that runs on your device. Spend Scout does not directly read Wallet history or connect to your bank.</p>
+          </details>
+          <details class="ss-faq-item">
             <summary>Does it work with multiple currencies?</summary>
             <p>Yes. You can log expenses in different currencies and Spend Scout keeps them organized. A great finance app for people who travel or spend across borders.</p>
           </details>
           <details class="ss-faq-item">
             <summary>When will Spend Scout be available?</summary>
-            <p>Spend Scout is coming soon to the App Store for iOS. It will be free to download with no subscriptions or in-app purchases.</p>
+            <p>Spend Scout's App Store launch is in progress for iPhone. It will be free to download with an optional one-time unlock and no subscription.</p>
           </details>
         </div>
       </div>
@@ -361,8 +415,8 @@
     <section class="ss-section ss-cta" aria-labelledby="ss-cta-title">
       <div class="ss-section-inner" data-reveal>
         <h2 id="ss-cta-title">Stop guessing.<br />Start knowing.</h2>
-        <p class="ss-cta-sub">Spend Scout is coming soon to iOS.</p>
-        <span class="ss-coming-soon-pill ss-coming-soon-pill--lg">App Store — Coming soon</span>
+        <p class="ss-cta-sub">Spend Scout's iPhone launch is in progress. The App Store download link will appear here after approval.</p>
+        <span class="ss-coming-soon-pill ss-coming-soon-pill--lg">App Store launch in progress</span>
       </div>
     </section>
 
