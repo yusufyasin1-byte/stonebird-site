@@ -3,12 +3,84 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://stonebirdgroup.com/</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://stonebirdgroup.com/assets/og-image.png</image:loc>
       <image:title>Stonebird Group Open Graph image</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://stonebirdgroup.com/breadcrumb/</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://stonebirdgroup.com/assets/breadcrumb/og-breadcrumb.png</image:loc>
+      <image:title>Breadcrumb Open Graph image</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stonebirdgroup.com/assets/breadcrumb/breadcrumb-app-icon.png</image:loc>
+      <image:title>Breadcrumb app icon</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stonebirdgroup.com/assets/breadcrumb/breadcrumb-quick-panel-clean-20260629.png</image:loc>
+      <image:title>Breadcrumb Quick Panel screenshot</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://stonebirdgroup.com/assets/breadcrumb/breadcrumb-source-context-clean-20260629.png</image:loc>
+      <image:title>Breadcrumb source context screenshot</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://stonebirdgroup.com/breadcrumb/clipboard-history-with-source-app/</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://stonebirdgroup.com/assets/breadcrumb/breadcrumb-source-context-clean-20260629.png</image:loc>
+      <image:title>Breadcrumb source app context screenshot</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://stonebirdgroup.com/breadcrumb/maccy-alternative/</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+    <image:image>
+      <image:loc>https://stonebirdgroup.com/assets/breadcrumb/breadcrumb-quick-panel-clean-20260629.png</image:loc>
+      <image:title>Breadcrumb Quick Panel screenshot</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://stonebirdgroup.com/breadcrumb/paste-alternative/</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+    <image:image>
+      <image:loc>https://stonebirdgroup.com/assets/breadcrumb/breadcrumb-main-window.svg</image:loc>
+      <image:title>Breadcrumb main window screenshot</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://stonebirdgroup.com/breadcrumb/private-clipboard-manager-mac/</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://stonebirdgroup.com/assets/breadcrumb/breadcrumb-main-window.svg</image:loc>
+      <image:title>Breadcrumb private clipboard manager screenshot</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://stonebirdgroup.com/breadcrumb/local-first-clipboard-manager/</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://stonebirdgroup.com/assets/breadcrumb/breadcrumb-quick-panel-clean-20260629.png</image:loc>
+      <image:title>Breadcrumb local-first clipboard manager screenshot</image:title>
     </image:image>
   </url>
   <url>

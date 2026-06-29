@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1077" viewBox="0 0 1400 1077" role="img" aria-labelledby="title desc">
+  <title id="title">Breadcrumb main window mock screenshot</title>
+  <desc id="desc">A sanitized Breadcrumb main window showing copied content, source context, actions, and nearby copies.</desc>
+  <defs>
+    <linearGradient id="window" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151519"/>
+      <stop offset="1" stop-color="#202026"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111114"/>
+      <stop offset="1" stop-color="#18161c"/>
+    </linearGradient>
+    <filter id="shadow" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="30" stdDeviation="34" flood-color="#000" flood-opacity=".36"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="1077" fill="#09090c"/>
+  <rect x="55" y="58" width="1290" height="958" rx="38" fill="url(#window)" stroke="#6f6a78" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="55" y="58" width="440" height="958" rx="38" fill="url(#side)" stroke="#ffffff" stroke-opacity=".06"/>
+  <line x1="495" y1="58" x2="495" y2="1016" stroke="#ffffff" stroke-opacity=".1"/>
+
+  <circle cx="98" cy="96" r="13" fill="#ff5f57"/>
+  <circle cx="134" cy="96" r="13" fill="#ffbd2e"/>
+  <circle cx="170" cy="96" r="13" fill="#28c840"/>
+  <rect x="88" y="154" width="365" height="62" rx="16" fill="#1b1b20" stroke="#ffffff" stroke-opacity=".08"/>
+  <text x="132" y="193" fill="#9d99a8" font-size="20" font-weight="650" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">Search clipboard</text>
+
+  <g font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">
+    <rect x="88" y="250" width="365" height="112" rx="18" fill="#3c2b58" stroke="#7040d8" stroke-opacity=".55"/>
+    <rect x="118" y="284" width="44" height="44" rx="11" fill="#4bb3fd"/>
+    <text x="132" y="315" fill="#fff" font-size="22" font-weight="700">M</text>
+    <text x="184" y="296" fill="#f5f1ea" font-size="21" font-weight="700">Final invoice and supplier</text>
+    <text x="184" y="324" fill="#f5f1ea" font-size="21" font-weight="700">contract</text>
+    <text x="184" y="349" fill="#9a95a5" font-size="16" font-weight="650">Mail  -  Email  -  3 min ago</text>
+
+    <text x="118" y="432" fill="#f5f1ea" font-size="21" font-weight="700">Launch pricing research notes</text>
+    <text x="118" y="460" fill="#85808f" font-size="16" font-weight="650">Safari  -  Text  -  8 min ago</text>
+
+    <text x="118" y="535" fill="#f5f1ea" font-size="21" font-weight="700">#6C2BD9 / #FFF3E0</text>
+    <text x="118" y="563" fill="#85808f" font-size="16" font-weight="650">Figma  -  Text  -  13 min ago</text>
+
+    <text x="118" y="638" fill="#f5f1ea" font-size="21" font-weight="700">ClipboardContext.swift</text>
+    <text x="118" y="666" fill="#85808f" font-size="16" font-weight="650">Xcode  -  Code  -  18 min ago</text>
+  </g>
+
+  <text x="552" y="110" fill="#f5f1ea" font-size="28" font-weight="750" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Display',sans-serif">Breadcrumb</text>
+  <rect x="552" y="168" width="72" height="72" rx="18" fill="#4bb3fd"/>
+  <text x="578" y="216" fill="#fff" font-size="34" font-weight="760" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">M</text>
+  <text x="648" y="197" fill="#f5f1ea" font-size="30" font-weight="750" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Display',sans-serif">Mail</text>
+  <text x="648" y="229" fill="#9d99a8" font-size="20" font-weight="600" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">Copied 29 Jun 2026 at 12:33</text>
+  <rect x="1062" y="184" width="132" height="42" rx="14" fill="#6c2bd9"/>
+  <text x="1091" y="211" fill="#fff" font-size="18" font-weight="750" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">Copy Again</text>
+  <rect x="1208" y="184" width="92" height="42" rx="14" fill="#303036"/>
+  <text x="1232" y="211" fill="#d8d5de" font-size="18" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">More</text>
+
+  <rect x="552" y="286" width="748" height="96" rx="18" fill="#25252b" stroke="#ffffff" stroke-opacity=".08"/>
+  <text x="592" y="326" fill="#8f8b99" font-size="17" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">Source</text>
+  <text x="592" y="353" fill="#d9d5df" font-size="19" font-weight="720" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">Mail</text>
+  <text x="777" y="326" fill="#8f8b99" font-size="17" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">Type</text>
+  <text x="777" y="353" fill="#d9d5df" font-size="19" font-weight="720" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">Email</text>
+  <text x="956" y="326" fill="#8f8b99" font-size="17" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">Copies</text>
+  <text x="956" y="353" fill="#d9d5df" font-size="19" font-weight="720" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">2x</text>
+  <text x="1128" y="326" fill="#8f8b99" font-size="17" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">Nearby</text>
+  <text x="1128" y="353" fill="#d9d5df" font-size="19" font-weight="720" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">3 nearby</text>
+
+  <text x="552" y="446" fill="#d9d5df" font-size="20" font-weight="760" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">Copied Content</text>
+  <rect x="552" y="472" width="748" height="270" rx="22" fill="#24232a" stroke="#ffffff" stroke-opacity=".08"/>
+  <text x="594" y="536" fill="#f4f1ea" font-size="28" font-weight="720" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">Final invoice and supplier contract</text>
+  <text x="594" y="584" fill="#f4f1ea" font-size="24" font-weight="580" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">before the end of the day.</text>
+  <text x="594" y="654" fill="#a9a4b2" font-size="20" font-weight="560" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">Reference: INV-2026-1842</text>
+
+  <text x="552" y="806" fill="#d9d5df" font-size="20" font-weight="760" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">Source Context</text>
+  <rect x="552" y="832" width="748" height="112" rx="20" fill="#24232a" stroke="#ffffff" stroke-opacity=".08"/>
+  <text x="592" y="876" fill="#8f8b99" font-size="18" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">App</text>
+  <text x="730" y="876" fill="#f4f1ea" font-size="20" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">Mail</text>
+  <text x="592" y="916" fill="#8f8b99" font-size="18" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">Window</text>
+  <text x="730" y="916" fill="#f4f1ea" font-size="20" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif">Supplier Contract</text>
+</svg>
